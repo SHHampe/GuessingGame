@@ -38,13 +38,13 @@ public class Guesser{
 		doGuesses();
 	}
 
-  private void rules(){
-    System.out.println("Think of a number between " +
-                       low + " and "  + high);
-    System.out.println("I'm going to ask a few questions in order " +
-                       "to guess the number.");
-    System.out.println("Please answer T for true, and F for false.\n");
-  }
+	private void rules(){
+		System.out.println("Think of a number between " +
+                             low + " and "  + high);
+		System.out.println("I'm going to ask a few questions in order " +
+                       		   "to guess the number.");
+		System.out.println("Please answer T for true, and F for false.\n");
+	}
 
   /*
    * Task 3. Complete the code for the getReply() method.
@@ -56,14 +56,20 @@ public class Guesser{
    * a valid reply. Return the String that you read from
    * the player.
    */
-  private String getReply(){
-    String reply = null;
-    // Write code here which reads a String from the console.
-    // As long as it is not a valid reply (one of "T" and "F")
-    // write an error message, and read a new reply.
-    // When you have gotten a valid reply, return it.
-    return reply;
-  }
+
+	private String getReply() {
+        	String reply;
+        	Console console = System.console();
+
+        	do {
+            		reply = console.readLine();
+            		if (!reply.equals("T") && !reply.equals("F")) {
+                		System.out.println("Please answer T or F");
+            		}
+        	} while (!reply.equals("T") && !reply.equals("F"));
+
+        	return reply;
+    	}
 
   private void doGuesses(){
     int i=0; // number of guesses
