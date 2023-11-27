@@ -8,8 +8,8 @@ import java.io.Console;
  * task to complete the missing parts.
  */
 public class Guesser{
-  private int low;
-  private int high;
+	private int low;
+	private int high;
 
   /*
    * Task 1. Write code here for a constructor
@@ -33,10 +33,10 @@ public class Guesser{
    * in the method body, you call first the
    * rules() method, next the doGuesses() method.
    */
-  public void start(){
-    // call the rules method here
-    // call the doGuesses() method here
-  }
+	public void start(){
+		rules();
+		doGuesses();
+	}
 
   private void rules(){
     System.out.println("Think of a number between " +
