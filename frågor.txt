@@ -1,0 +1,23 @@
+* När använder man add respektive commit?
+	'git add' och 'git commit' är två kommando som används för att spåra förändringar i filer över tid.
+	Man använder 'git add' när man vill lägga till filer och/eller ändringar i redan tillagda filer till 'staging-area'.
+	Man använder 'git commit' för att göra en commit med de filer/ändringar som ligger i 'staging-area'. Med 'git commit' så sparar man de filer/ändringar som en permanent del av historiken för projektet. Man kan ange ett meddelande som beskriver vad commiten innehåller med 'git commit -m "meddelande".
+
+
+* Vad är pull respektive push?
+	'git pull' och 'git push' är två kommando som används för att hantera ändringar mellan ett lokalt repository eoch ett fjärrrepository som tex GitHub.
+	'git pull' används för att hämta ändringar som har gjorts.
+	'git push' används för att dela ändringar eller spara dem på ett fjärrbaserat repository.
+
+* När använder man log respektive status?
+	'git log' och 'git status' är två kommando som används för att få information om sitt repository.
+	'git log' anväds för att visa historiken över commits, så som lista över commits med information som commit-ID, författare, datum och commit-meddelande.
+	'git status' används för att få en översikt över tillståndet i arbetsområdet. Man ser vilka filer som har ändrats, vilka filer som ligger i 'staging-area' och om det finns ändringar som ännu inte har spårats av Git.
+
+* Vad är Git branch och varför är det viktiga?
+	En 'branch' är en seperat linge av utveckling som tillåter en att arbeta med olika uppgifter, funktioner eller ändringar isolerat från huvudgrenen (oftast kallad 'master' eller 'main' branch). Varje branch representerar en oberoende sekvens av commits, vilket för det möjligt att experimentera, utveckla och testa ändringar utan att påvärka den stabila koden i huvudgrenen.
+	*Isolering av arbete: Genom att skapa en branch kan man arbeta på nya funktioner, buggfixar eller förbättringar utan att påvärka huvudkoden. Vilket minskar risken för att introducera oavsiktliga fel i den stabila koden.
+	*Parallellt arbete: Team kan arbeta parallellt på olika funktioner eller uppgifter, varje person kan ha en egen branch för sitt arbete och sedan sammanfoga ändringarna när dem är redo.
+	*Förenkla testning och granskning: Branches gör det enklare att testa och granska ändringar, man kan testa och varifiera funktioner separat innan de integreras i huvudprojektet.
+	*Versionshantering: Genom att använda branches kan man skapa olika versioner av projektet.
+	
